@@ -69,7 +69,7 @@ public class MyWebAppTest_sauce implements SauceOnDemandSessionIdProvider {
 //        webDriver.get("https://saucelabs.com/test/guinea-pig");
 //        assertEquals("I am a page title - Sauce Labs", webDriver.getTitle());
 	    webDriver.get(baseUrl + "/search?q=nttcommunications&ie=utf-8&oe=utf-8&hl=ja");
-	    webDriver.findElement(By.linkText("NTTコミュニケーションズ オフィシャルサイト")).click();
+	    webDriver.findElement(By.linkText("NTT")).click();
 
     }
 
