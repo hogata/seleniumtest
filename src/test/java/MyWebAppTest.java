@@ -24,11 +24,11 @@ public class MyWebAppTest {
 	  @Before
 	  public void setUp() throws Exception {
 		
-		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		capabilities.setCapability("chrome.binary", "/Applications/Google Chrome.app/Contents/MacOS/GoogleChrome");
-		System.setProperty("webdriver.chrome.driver", "/Users/webosbdb/Downloads/chromedriver"); 
-//		driver = new FirefoxDriver();
-		driver = new ChromeDriver();	
+//		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//		capabilities.setCapability("chrome.binary", "/Applications/Google Chrome.app/Contents/MacOS/GoogleChrome");
+//		System.setProperty("webdriver.chrome.driver", "/Users/webosbdb/Downloads/chromedriver"); 
+		driver = new FirefoxDriver();
+//		driver = new ChromeDriver();	
 	    baseUrl = "https://www.google.co.jp/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
